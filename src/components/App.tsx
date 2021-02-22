@@ -1,8 +1,8 @@
 import React from 'react';
+import Layout from './Layout';
 
 function App() {
-  console.log('hejsan')
-  return <h1>Hello World!!</h1>
+  return <Layout/>
 }
 
 export default App;
