@@ -4,9 +4,9 @@ import SectionItem from "./SectionItem";
 function Content() {
   return (
     <>
-      <SectionItem />
-      <SectionItem />
-      <SectionItem />
+      <SectionItem image='../images/forest-1.jpg' title='Forest'/>
+      <SectionItem image='../images/sky-1.jpg' title='Sky'/>
+      <SectionItem image='../images/desert-1.jpg' title='Desert'/>
     </>
   ) 
 }

@@ -1,15 +1,20 @@
 import React, {CSSProperties} from "react";
 
-function SectionItem() {
+interface Props {
+  image: string;
+  title: string;
+}
+
+function SectionItem(props: Props) {
   return(
   <div className="sectionItem" style={sectionItemStyle}>
-    <h2>Title</h2>
+    <h2 style={titleStyle}>{props.title}</h2>
+    <img src={props.image} style={imageStyle}/>
   </div>
   )
 }
 
 const sectionItemStyle: CSSProperties = {
-  backgroundImage: 'url(../images/forest-1.jpg)',
   color: 'white',
   fontSize: '1.75rem',
   width: '96vw',
@@ -17,7 +22,25 @@ const sectionItemStyle: CSSProperties = {
   display: 'flex',
   flex: 1,
   alignItems: 'center',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  position: 'relative',
+  background: 'darkgrey'
+}
+
+const titleStyle: CSSProperties = {
+  position: "absolute",
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  zIndex: 2
+}
+
+const imageStyle: CSSProperties = {
+  width: '100%',
+  height: '100%',
+  position: 'absolute',
+  top: 0,
+  zIndex: 1
 }
 
 export default SectionItem;
