@@ -5,8 +5,8 @@ import DetailView from "./DetailView";
 function ViewContainer() {
   return (
     <>
-      <MasterView/>
-      {/* <DetailView/> */}
+      {/* <MasterView/> */}
+      <DetailView/>
     </>
   ) 
 }
