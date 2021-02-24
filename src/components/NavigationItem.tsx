@@ -5,16 +5,16 @@ interface Props {
   title: string;
 }
 
-function SectionItem(props: Props) {
+function NavigationItem(props: Props) {
   return(
-  <div className="sectionItem" style={sectionItemStyle}>
+  <div className="navigationItem" style={navigationItemStyle}>
     <h2 style={titleStyle}>{props.title}</h2>
     <img src={props.image} style={imageStyle}/>
   </div>
   )
 }
 
-const sectionItemStyle: CSSProperties = {
+const navigationItemStyle: CSSProperties = {
   color: 'white',
   fontSize: '1.75rem',
   width: '96vw',
@@ -45,4 +45,4 @@ const imageStyle: CSSProperties = {
   borderRadius: '6px'
 }
 
-export default SectionItem;
+export default NavigationItem;

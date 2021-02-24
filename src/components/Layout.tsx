@@ -1,12 +1,12 @@
 import Header from "./Header";
-import Content from "./Content";
+import ViewContainer from "./ViewContainer";
 import React from "react";
 
 function Layout() {
   return(
     <>
       <Header />
-      <Content />
+      <ViewContainer />
     </>
   )
 }
