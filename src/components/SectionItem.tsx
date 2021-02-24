@@ -23,8 +23,7 @@ const sectionItemStyle: CSSProperties = {
   flex: 1,
   alignItems: 'center',
   justifyContent: 'center',
-  position: 'relative',
-  background: 'darkgrey'
+  position: 'relative'
 }
 
 const titleStyle: CSSProperties = {
@@ -32,15 +31,18 @@ const titleStyle: CSSProperties = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  zIndex: 2
+  zIndex: 2,
+  textShadow: '2px 2px 6px rgba(0, 0, 0, 0.25)'
 }
 
 const imageStyle: CSSProperties = {
   width: '100%',
   height: '100%',
+  objectFit: 'cover',
   position: 'absolute',
   top: 0,
-  zIndex: 1
+  zIndex: 1,
+  borderRadius: '6px'
 }
 
 export default SectionItem;
