@@ -1,17 +1,19 @@
 import React, {CSSProperties} from "react";
+import { Link } from "react-router-dom";
 
 interface Props {
-  image: string;
-  title: string;
+  id: string;
 }
 
 function NavigationItem(props: Props) {
-  return(
-  <div className="navigationItem" style={navigationItemStyle}>
-    <h2 style={titleStyle}>{props.title}</h2>
-    <img src={props.image} style={imageStyle}/>
-  </div>
-  )
+  const imageSrc = `../images/${props.id}.jpg`;
+  const toUrl = `/${props.id}`;
+    return(
+      <Link to={toUrl} style={navigationItemStyle}>
+        <h2 style={titleStyle}>{props.id}</h2>
+        <img src={imageSrc} style={imageStyle}/>
+      </Link>
+    )
 }
 
 const navigationItemStyle: CSSProperties = {

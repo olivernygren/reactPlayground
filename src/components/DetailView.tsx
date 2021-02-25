@@ -1,7 +1,13 @@
 import React, { CSSProperties } from "react";
+import { RouteComponentProps } from 'react-router-dom';
 
-function DetailView() {
-  const imageSrc = '../images/forest.jpg';
+interface Props extends RouteComponentProps<{ id: string }> {
+
+}
+
+function DetailView(props: Props) {
+  const name = props.location.pathname; // name -> { id: name }, props.location.pathname -> props.match.params
+  const imageSrc = `../images/${name}.jpg`;
   return (
     <div style={rootStyle}>
       <img style={imageStyle} src={imageSrc} alt=""/>
