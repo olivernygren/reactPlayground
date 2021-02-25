@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react";
 import { RouteComponentProps } from 'react-router-dom';
 
-interface Props extends RouteComponentProps<{ id: string }> {
+interface Props extends RouteComponentProps {
 
 }
 
